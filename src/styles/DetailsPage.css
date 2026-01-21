@@ -1,0 +1,55 @@
+/* DetailsPage.css */
+
+.details-container {
+  padding: 1.5rem; /* p-6 */
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.details-left {
+  max-width: 36rem; /* max-w-xl */
+  white-space: pre-line; /* whitespace-pre-line */
+}
+
+.details-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.details-description {
+  color: #4b5563; /* text-gray-600 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.details-preview {
+  background-color: #f9fafb; /* bg-gray-50 */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-inner */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.next-button {
+  margin-left: auto; /* ml-auto */
+  margin-top: auto; /* mt-auto */
+  border: 2px solid #93c5fd; /* border-blue-300 */
+  font-weight: 700; /* font-bold */
+  height: 2.5rem; /* h-10 */
+  width: 10rem; /* w-40 */
+  border-radius: 2rem; /* rounded-4xl */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #93c5fd; /* text-blue-300 */
+  box-shadow: 0 0 5px rgba(147, 197, 253, 0.3); /* shadow-blue-300 */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.next-button:hover {
+  border-color: #2563eb; /* hover:border-blue-600 */
+  color: #2563eb; /* hover:text-blue-600 */
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5); /* hover:shadow-xl */
+}

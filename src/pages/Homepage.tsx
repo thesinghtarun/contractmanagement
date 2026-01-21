@@ -7,6 +7,8 @@ import jobAgreement from "../assets/job_agreement.png";
 import nda from "../assets/nda.png";
 import rentAgreement from "../assets/rent_agreement.png";
 
+import "../styles/HomePage.css";
+
 interface CardData {
   card_title: string;
   card_image: string;
@@ -15,7 +17,6 @@ interface CardData {
 }
 
 const HomePage: React.FC = () => {
-  // list cards to show Contract-Cards
   const cards: CardData[] = [
     {
       card_title: "Job offer letter",
@@ -50,8 +51,8 @@ const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 p-4">
+    <div className="homepage-container">
+      <div className="homepage-grid">
         {cards.map((card, index) => (
           <Card
             key={index}

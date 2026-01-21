@@ -1,0 +1,28 @@
+/* HomePage.css */
+
+/* Container for centering the grid */
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem; /* p-4 */
+}
+
+/* Grid for cards */
+.homepage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+  gap: 1rem; /* gap-4 */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .homepage-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .homepage-grid {
+    grid-template-columns: repeat(5, 1fr); /* lg:grid-cols-5 */
+  }
+}

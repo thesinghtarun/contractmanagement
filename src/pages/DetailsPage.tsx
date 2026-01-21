@@ -1,8 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import contractDetails from "../const/contractDetails.json";
-
-/* -------------------- Types -------------------- */
+import "../styles/DetailsPage.css"
 
 type ContractType =
   | "job_offer_letter"
@@ -19,8 +18,6 @@ interface ContractDetail {
 
 type ContractDetailsMap = Record<ContractType, ContractDetail>;
 
-/* -------------------- Component -------------------- */
-
 const DetailsPage: React.FC = () => {
   const { type } = useParams<{ type: ContractType }>();
   const navigate = useNavigate();
@@ -34,35 +31,22 @@ const DetailsPage: React.FC = () => {
   }
 
   return (
-    <div className="p-6 flex min-h-screen">
+    <div className="details-container">
       {/* Left section */}
-      <div className="max-w-xl whitespace-pre-line">
-        <h1 className="text-2xl font-bold mb-2">{details.title}</h1>
-
-        <p className="text-gray-600 mb-4">{details.description}</p>
+      <div className="details-left">
+        <h1 className="details-title">{details.title}</h1>
+        <p className="details-description">{details.description}</p>
 
         {/* Contract preview */}
-        <div className="bg-gray-50 p-4 rounded shadow-inner text-sm">
-          {details.preview}
-        </div>
+        <div className="details-preview">{details.preview}</div>
       </div>
 
       {/* Next button */}
-      <div className="ml-auto mt-auto">
-        <div
-          onClick={() => navigate(`/form/${type}`)}
-          className="
-            border-blue-300 font-bold shadow-blue-300
-            border-2 rounded-4xl h-10 w-40
-            flex justify-center items-center
-            text-blue-300 hover:cursor-pointer
-            hover:border-blue-600 hover:text-blue-600
-            hover:shadow-xl hover:shadow-blue-600
-            transition
-          "
-        >
-          NEXT
-        </div>
+      <div
+        className="next-button"
+        onClick={() => navigate(`/form/${type}`)}
+      >
+        NEXT
       </div>
     </div>
   );
