@@ -138,15 +138,25 @@ const FormPage: React.FC = () => {
           <h1 className="text-xl font-bold mb-4">{details.title}</h1>
 
           <div className="flex flex-col gap-4">
-            {fields.map(field => (
-              <input
-                key={field}
-                placeholder={field.replaceAll("_", " ").toUpperCase()}
-                className={inputStyle}
-                value={formData[field] ?? ""}
-                onChange={e => handleChange(field, e.target.value)}
-              />
-            ))}
+            {fields.map(field => {
+  const isDateField = field.toLowerCase().includes("date");
+
+  return (
+    <div key={field} className="flex flex-col gap-1">
+      <label className="text-xs font-semibold text-gray-600">
+        {field.replaceAll("_", " ").toUpperCase()}
+      </label>
+
+      <input
+        type={isDateField ? "date" : "text"}
+        className={inputStyle}
+        value={formData[field] ?? ""}
+        onChange={e => handleChange(field, e.target.value)}
+      />
+    </div>
+  );
+})}
+
           </div>
         </div>
 
