@@ -1,0 +1,27 @@
+{
+  "job_offer_letter": {
+    "title": "Job Offer Letter",
+    "description": "A formal letter issued by an employer offering employment to a selected candidate.",
+    "preview": "Date: {{date}}\n\nDear {{candidate_name}},\n\nWe are pleased to offer you the position of {{job_title}} at {{company_name}}, subject to the terms and conditions outlined below.\n\n1. Position and Department\nYou will be employed as {{job_title}} in the {{department}} department and will report to {{reporting_manager}}.\n\n2. Compensation\nYour total annual compensation (CTC) will be rs{{salary}}, payable as per company payroll policies.\n\n3. Work Location\nYour primary work location will be {{work_location}}. The company may require relocation or remote work as per business needs.\n\n4. Joining Date\nYour expected date of joining will be {{joining_date}}.\n\n5. Probation Period\nYou will be on probation for a period of {{probation_period}} months from the date of joining.\n\n6. Confidentiality\nYou are required to maintain strict confidentiality of company information during and after your employment.\n\n7. Termination\nEither party may terminate this employment by providing {{notice_period}} days written notice or salary in lieu thereof.\n\nPlease sign and return this letter as a token of your acceptance.\n\nSincerely,\n{{hr_name}}\n{{company_name}}"
+  },
+  "internship_offer_letter": {
+    "title": "Internship Offer Letter",
+    "description": "An official letter confirming selection for an internship program.",
+    "preview": "Date: {{date}}\n\nDear {{candidate_name}},\n\nWe are pleased to offer you an internship opportunity at {{company_name}} as a {{internship_role}}.\n\n1. Internship Duration\nThe internship will commence on {{start_date}} and conclude on {{end_date}}.\n\n2. Stipend\nYou will receive a monthly stipend of rs{{stipend}} during the internship period.\n\n3. Working Hours\nYour working hours will be {{working_hours}}.\n\n4. Confidentiality\nAll company data and intellectual property must be kept confidential.\n\nThis internship does not guarantee permanent employment.\n\nBest regards,\n{{company_name}}"
+  },
+  "job_agreement": {
+    "title": "Job Contract Agreement",
+    "description": "A legally binding agreement between employer and employee defining employment terms.",
+    "preview": "This Job Contract Agreement is made on {{date}} between {{company_name}} and {{employee_name}}.\n\n1. Designation\nThe employee is appointed as {{job_title}}.\n\n2. Compensation\nThe employee shall be paid a salary of rs{{salary}} per annum.\n\n3. Responsibilities\nThe employee agrees to perform duties assigned by the employer to the best of their ability.\n\n4. Confidentiality and Non-Compete\nThe employee shall not disclose confidential information during or after employment.\n\n5. Termination\nThis agreement may be terminated with {{notice_period}} days written notice by either party.\n\nSigned by both parties as acceptance of terms."
+  },
+  "rent_agreement": {
+    "title": "Rent Agreement",
+    "description": "A legal agreement between property owner and tenant outlining rental terms.",
+    "preview": "This Rent Agreement is made on {{date}} between {{owner_name}} (Owner) and {{tenant_name}} (Tenant).\n\n1. Property Details\nThe property is located at {{property_address}}.\n\n2. Rent and Deposit\nMonthly rent shall be rs{{rent_amount}} payable on {{rent_due_date}}.\nSecurity deposit amount: rs{{security_deposit}}.\n\n3. Agreement Duration\nThis agreement is valid from {{start_date}} to {{end_date}}.\n\n4. Maintenance and Utilities\nThe tenant shall be responsible for utility and maintenance charges.\n\nBoth parties agree to the above terms and conditions."
+  },
+  "nda": {
+    "title": "Non-Disclosure Agreement (NDA)",
+    "description": "A legal contract to protect confidential information shared between parties.",
+    "preview": "This Non-Disclosure Agreement is entered into on {{date}} between {{party_one}} and {{party_two}}.\n\n1. Definition of Confidential Information\nConfidential information includes all business, technical, and financial data shared.\n\n2. Obligations\nThe receiving party agrees not to disclose confidential information to third parties.\n\n3. Duration\nThis agreement shall remain in effect for {{nda_duration}} years.\n\n4. Governing Law\nThis agreement shall be governed by the laws of {{jurisdiction}}.\n\nBoth parties acknowledge and agree to the terms stated above."
+  }
+}
